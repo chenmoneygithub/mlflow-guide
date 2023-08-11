@@ -141,14 +141,14 @@ test_dataset = datasets.Dataset.from_spark(test, cache_dir="/dbfs/cache/test")
 
 # COMMAND ----------
 
-from datasets import load_dataset
+# from datasets import load_dataset
 
-sms_dataset = load_dataset("sms_spam")
-sms_train_test = sms_dataset["train"].train_test_split(test_size=0.2)
-# For consistency, we rename "sms" => "text".
-sms_train_test = sms_train_test.rename_column("sms", "text")
-train_dataset = sms_train_test["train"]
-test_dataset = sms_train_test["test"]
+# sms_dataset = load_dataset("sms_spam")
+# sms_train_test = sms_dataset["train"].train_test_split(test_size=0.2)
+# # For consistency, we rename "sms" => "text".
+# sms_train_test = sms_train_test.rename_column("sms", "text")
+# train_dataset = sms_train_test["train"]
+# test_dataset = sms_train_test["test"]
 
 # COMMAND ----------
 
