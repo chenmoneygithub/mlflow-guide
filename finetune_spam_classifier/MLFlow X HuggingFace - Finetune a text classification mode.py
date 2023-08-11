@@ -46,11 +46,6 @@ dbutils.library.restartPython()
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC Get the working directory, we will need it in our next cell.
-
-# COMMAND ----------
-
-# MAGIC %md
 # MAGIC Copy the dataset to Databricks file system (DBFS). The `tutorial_path` sets the path in DBFS that the notebook uses to write the sample dataset. It is deleted by the last command in this notebook.
 # MAGIC
 # MAGIC You can find the path to dataset by clicking on the triple dot next to `SMSSpamCollection` on the left sidebar, then Copy => Path.
